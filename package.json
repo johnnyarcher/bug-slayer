@@ -1,0 +1,19 @@
+{
+  "name": "bug-slayer",
+  "version": "1.0.0",
+  "description": "Automated Cypress Testing ",
+  "main": "index.js",
+  "scripts": {
+    "test": "run slayer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnyarcher/bug-slayer.git"
+  },
+  "author": "/johnnyarcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnnyarcher/bug-slayer/issues"
+  },
+  "homepage": "https://github.com/johnnyarcher/bug-slayer#readme"
+}
