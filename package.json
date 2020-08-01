@@ -18,5 +18,6 @@
   "homepage": "https://github.com/johnnyarcher/bug-slayer#readme",
   "devDependencies": {
     "cypress": "^4.11.0"
-  }
+  },
+  "dependencies": {}
 }
