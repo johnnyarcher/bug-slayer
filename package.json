@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/johnnyarcher/bug-slayer/issues"
   },
-  "homepage": "https://github.com/johnnyarcher/bug-slayer#readme"
+  "homepage": "https://github.com/johnnyarcher/bug-slayer#readme",
+  "devDependencies": {
+    "cypress": "^4.11.0"
+  }
 }
