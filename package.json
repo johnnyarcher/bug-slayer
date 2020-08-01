@@ -4,7 +4,8 @@
   "description": "Automated Cypress Testing ",
   "main": "index.js",
   "scripts": {
-    "test": "run slayer"
+    "test": "run slayer",
+    "cypress:open": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,5 @@
     "cypress": "^4.11.0"
   },
   "dependencies": {}
-}
-{
-  "scripts": {
-    "cypress:open": "cypress open"
   }
 }
