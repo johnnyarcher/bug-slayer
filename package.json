@@ -4,10 +4,11 @@
   "description": "Automated Cypress Testing",
   "main": "index.js",
   "scripts": {
-    "test": "run slayer",
     "cypress:open": "cypress open",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "repository": {
     "type": "git",
