@@ -1,13 +1,9 @@
-smoke_tester_prod.spec.js
-
 // <reference types="cypress" />
-
-describe("Smoke Tester", () => {
+describe("Fast n Dirty Smoke Tester", () => {
   it("Runs Automated Smoke Tests for IMC", () => { 
   cy.visit('http://localhost:3000');
-
-  cy.get('#user_email').type('ADD CREDS TO RUN');
-  cy.get('#user_password').type('ADD CREDS TO RUN');
+  cy.get('#user_email').type('user_email');
+  cy.get('#user_password').type('user_password');
     cy.server();
   cy.get('.btn-primary').click();
   
@@ -19,9 +15,9 @@ describe("Smoke Tester", () => {
   cy.contains('Digital Advertising');
   cy.contains('Websites (CMS)');
   cy.contains('Blog & Events');
-  cy.contains('Location Settings');
   
   //step 3 - validate A&R
+  cy.get('.home-link').should('contain', 'Analytics & Reporting')
   cy.get('.home-link').contains('Analytics & Reporting').click();
   cy.get('.match-select-height').should('contain', 'Create/Edit Groups').click();
   cy.get('.ml-8').contains('Create New Group').click();
@@ -39,7 +35,6 @@ describe("Smoke Tester", () => {
   cy.get('.heading').contains('Select Client');
   cy.get('.logo').should('contain', 'Digital Advertising').click();
 
-
   //step 6 - validate CMS Link
   cy.get('.home-link').contains('Websites (CMS)').click();
   cy.location().should((loc) => {
@@ -51,12 +46,3 @@ describe("Smoke Tester", () => {
   cy.location().should((loc) => {
     expect(loc.href).to.eq('https://g5-news-and-events-service.herokuapp.com')
   });
-
-  //step 8 - validate Location Settings
-  //cy.visit('/location-settings');
-
-  //step 9 - validate WCS
-  //cy.visit('/widgets');
-//})
-
-  
