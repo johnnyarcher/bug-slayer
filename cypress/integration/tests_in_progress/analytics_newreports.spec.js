@@ -13,7 +13,8 @@ describe("Bug-Slayer | New Reports", () => {
   cy.get('.report-nav-item').should('contain', 'Pageview Summary')
   cy.get('.report-nav-item').contains('Pageview Summary').click();
 
-  cy.get('.lk-title-controls').click();
+  cy.get('.lk-icon-gear').click();
+
 
   cy.get('.report-nav-item').should('contain', 'Sessions Overview')
   cy.get('.report-nav-item').contains('Sessions Overview').click();

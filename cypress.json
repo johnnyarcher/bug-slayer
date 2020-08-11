@@ -1,4 +1,4 @@
-{
+ {
   "fixturesFolder": "cypress/fixtures",
   "integrationFolder": "cypress/integration",
   "pluginsFile": "cypress/plugins",
@@ -7,6 +7,5 @@
   "videosFolder": "cypress/videos",
   "chromeWebSecurity": false,
   "defaultCommandTimeout": 10000,
-  "pageLoadTimeout": 10000,
-  "waitForAnimations":	true
-}
+  "pageLoadTimeout": 10000
+ }
