@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-describe("Digital Advertising Automated Testing", () => {
-  it("Bug-Slayer | IMC:DA", () => { 
+describe("Bug-Slayer | DA E2E Smoker", () => {
+  it("Automated E2E Smoke Tests for DA", () => { 
   cy.visit('http://localhost:3000');
 
   cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));

@@ -1,6 +1,6 @@
 // <reference types="cypress" />
-describe("Quick n Dirty Smoke Tester", () => {
-  it("Runs Automated Smoke Tests for IMC", () => { 
+describe("Bug-Slayer | E2E Regression | GLOBAL | Landing Page", () => {
+  it("Automated Regression Testing for IMC Landing Page - GLOBAL USER", () => { 
   cy.visit('http://localhost:3000');
   cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
   cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
