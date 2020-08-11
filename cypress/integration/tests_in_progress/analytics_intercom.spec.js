@@ -13,7 +13,8 @@ describe("Bug-Slayer | Intercom", () => {
 
   cy.get('.match-select-height').should('contain', 'Create/Edit Groups').click();
   cy.get('.ml-8').contains('Create New Group').click();
-  cy.get('.v-text-area').contains('Group Name').type('TEST |bug-slayer|' {force: true} );
+  cy.get('.data-v-154104ae').contains('Group Name').type('TEST |bug-slayer|' {force: true} );
+
   //need to add group name, select client & locations and save 
 
   cy.get('.v-btn').contains('Cancel').click();  

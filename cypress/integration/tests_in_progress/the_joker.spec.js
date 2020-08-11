@@ -1,6 +1,6 @@
 // <reference types="cypress" />
 describe("The Joker", () => {
-  it("Runs Automated Regression for IMC", () => { 
+  it("Runs a Mean Automated Regression for IMC", () => { 
   cy.visit('http://localhost:3000');
   cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
   cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
