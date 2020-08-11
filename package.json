@@ -22,6 +22,7 @@
   "homepage": "https://github.com/johnnyarcher/bug-slayer#readme",
   "devDependencies": {
     "cypress": "^4.11.0",
+    "cypress-audit": "^0.2.2",
     "nodemon": "^2.0.4"
   },
   "dependencies": {
