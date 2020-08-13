@@ -1,7 +1,8 @@
 // <reference types="cypress" />
-describe("The Joker", () => {
-  it("Runs a Mean Automated Regression for IMC", () => { 
+describe("Bug-Slayer | E2E Regression | Landing Page", () => {
+  it("Automated Regression Testing for IMC - Landing Page", () => { 
   cy.visit('http://localhost:3000');
+  cy.clearCookies()
   cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
   cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
     cy.server();
@@ -26,7 +27,6 @@ describe("The Joker", () => {
 
   //step 4 - validate R&S
   cy.get('.home-link').contains('Rep & Social').click();
-    cy.wait(5000);
   //add iframe validation stuff here
   cy.get('.logo').should('contain', 'Rep & Social').click();
 

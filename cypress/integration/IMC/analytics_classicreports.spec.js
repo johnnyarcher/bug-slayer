@@ -1,7 +1,8 @@
 // <reference types="cypress" />
 describe("Bug-Slayer | Classic Reports", () => {
   it("Automated Testing for Classic Reports", () => { 
-  cy.visit('http://localhost:3000');
+  cy.visit(Cypress.env('FIRE'));
+  cy.clearLocalStorage()
   cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
   cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
     cy.server();

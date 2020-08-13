@@ -1,6 +1,6 @@
 // <reference types="cypress" />
-describe("Bug-Slayer | New Reports", () => {
-  it("Automated Testing for New Reports", () => { 
+describe("Bug-Slayer | Analytics E2E Smoker", () => {
+  it("Automated E2E Smoke Tests for Analytics", () => { 
   cy.visit('http://localhost:3000');
   cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
   cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
@@ -10,11 +10,9 @@ describe("Bug-Slayer | New Reports", () => {
   cy.get('h1').should('contain', 'Welcome to Smarter Marketing');
   cy.get('.home-link').should('contain', 'Analytics & Reporting')
   cy.get('.home-link').contains('Analytics & Reporting').click();
+  
   cy.get('.report-nav-item').should('contain', 'Pageview Summary')
   cy.get('.report-nav-item').contains('Pageview Summary').click();
-
-  cy.get('.lk-icon-gear').click();
-
 
   cy.get('.report-nav-item').should('contain', 'Sessions Overview')
   cy.get('.report-nav-item').contains('Sessions Overview').click();
@@ -64,5 +62,48 @@ describe("Bug-Slayer | New Reports", () => {
   cy.get('.report-nav-item').should('contain', 'Social Performance')
   cy.get('.report-nav-item').contains('Social Performance').click();
 
-  cy.get('.logo').should('contain', 'Analytics').click()
+  cy.get('.report-nav-item').should('contain', 'Classic Reports')
+  cy.get('.Classic Reports').contains('Classic Reports').click();
+
+  cy.get('.tabs-component-tab').should('contain', 'Key Metrics')
+  cy.get('.report-nav-item').contains('Key Metrics').click();
+
+  cy.get('.report-nav-item').should('contain', 'Overview Report')
+  cy.get('.report-nav-item').contains('Overview Report').click();
+
+  cy.get('.report-nav-item').should('contain', 'Website Users')
+  cy.get('.report-nav-item').contains('Website Users').click();
+
+  cy.get('.report-nav-item').should('contain', 'Users by Medium')
+  cy.get('.report-nav-item').contains('Users by Medium').click();
   
+  cy.get('.report-nav-item').should('contain', 'Users by Devise Type')
+  cy.get('.report-nav-item').contains('Users by Devise Type').click();
+
+  cy.get('.report-nav-item').should('contain', 'Call Marketing Channel')
+  cy.get('.report-nav-item').contains('Call Marketing Channel').click();
+
+  cy.get('.report-nav-item').should('contain', 'Top Referrel Sources')
+  cy.get('.report-nav-item').contains('Top Referrel Sources').click();
+
+  cy.get('.report-nav-item').should('contain', 'Interaction Breakdown')
+  cy.get('.report-nav-item').contains('Interaction Breakdown').click();
+
+  cy.get('.report-nav-item').should('contain', 'Lead Breakdown')
+  cy.get('.report-nav-item').contains('Lead Breakdown').click();
+
+  cy.get('.report-nav-item').should('contain', 'Lead/Lease Detail')
+  cy.get('.report-nav-item').contains('Lead/Lease Detail').click();
+
+  cy.get('.report-nav-item').should('contain', 'Glossery')
+  cy.get('.report-nav-item').contains('Glossery').click();
+
+  cy.get('.match-select-height').should('contain', 'Create/Edit Groups').click();
+  cy.get('.ml-8').contains('Create New Group').click();
+  cy.get('.v-text-area').contains('Group Name').type('TEST |bug-slayer|' {force: true} );
+    
+
+
+  cy.get('.input-85').contains()
+  cy.get('.v-btn').contains('Cancel').click();  
+  cy.get('.logo').should('contain', 'Analytics').click();

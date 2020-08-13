@@ -1,7 +1,9 @@
 // <reference types="cypress" />
-describe("Bug-Slayer | E2E Regression | Landing Page", () => {
-  it("Automated Regression Testing for IMC - Landing Page", () => { 
-  cy.visit('http://localhost:3000');
+describe("The Joker", () => {
+  it("Runs a Mean Automated Regression for IMC", () => { 
+  cy.visit(Cypress.env('FIRE'));
+  cy.clearCookies()
+  cy.clearLocalStorage()
   cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
   cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
     cy.server();
