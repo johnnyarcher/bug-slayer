@@ -27,7 +27,7 @@ describe("NMV2 Viewport", () => {
     cy.wait(200)
     cy.viewport('iphone-x', 'landscape')
     cy.wait(200)
-	cy.viewport('iphone-xr')
+    cy.viewport('iphone-xr')
     cy.wait(200)
     cy.viewport('iphone-xr', 'landscape')
     cy.wait(200)
