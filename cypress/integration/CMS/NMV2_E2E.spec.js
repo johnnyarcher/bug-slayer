@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 describe("NMV2 Viewport", () => {
-  it("Runs a Mean Automated Regression for NMV2", () => { 
-  cy.visit('www.storquest.comm');
+  it("Runs Some Mean Automated Test for NMV2", () => { 
+  cy.visit('');
   })
 
   it('cy.viewport() - set the viewport size and dimension', () => {
