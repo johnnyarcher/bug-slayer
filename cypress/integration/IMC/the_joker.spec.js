@@ -1,6 +1,6 @@
 // <reference types="cypress" />
 describe("The Joker", () => {
-  it("Runs a Mean Automated Regression for IMC", () => { 
+  it("Runs a Quick & Dirty Automated Regression for IMC", () => { 
   cy.visit(Cypress.env('FIRE'));
   cy.clearCookies()
   cy.clearLocalStorage()

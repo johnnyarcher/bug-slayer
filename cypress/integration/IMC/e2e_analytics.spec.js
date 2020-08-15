@@ -1,6 +1,6 @@
 // <reference types="cypress" />
-describe("Bug-Slayer | Analytics E2E Smoker", () => {
-  it("Automated E2E Smoke Tests for Analytics", () => { 
+describe("Bug-Slayer | Analytics | E2E Smoker", () => {
+  it("Runs Automated E2E Smoke Tests for Analytics on IMC", () => { 
   cy.visit('http://localhost:3000');
   cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
   cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
