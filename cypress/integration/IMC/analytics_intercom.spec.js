@@ -1,10 +1,9 @@
 // <reference types="cypress" />
 describe("Bug-Slayer | Intercom", () => {
-  it("Automated Testing for Intercom Views/Events", () => { 
+  it("Validates User Eventing", () => { 
   cy.visit('http://localhost:3000');
   cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
   cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
-    cy.server();
   cy.get('.btn-primary').click();
 
   cy.get('h1').should('contain', 'Welcome to Smarter Marketing');

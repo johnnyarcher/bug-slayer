@@ -1,6 +1,6 @@
 // <reference types="cypress" />
-describe("Bug-Slayer | New Reports", () => {
-  it("Automated Testing for New Reports", () => { 
+describe("Bug-Slayer | Analytics | New Reports", () => {
+  it("validates New Reports", () => { 
   cy.visit(Cypress.env('FIRE'));
   cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
   cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
