@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+// <reference types="cypress" />
 
 describe("Bug-Slayer | DA | E2E Smoker", () => {
   it("Runs Automated E2E Smoke Tests for DA on IMC", () => { 

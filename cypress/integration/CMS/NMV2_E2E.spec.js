@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+// <reference types="cypress" />
 describe("NMV2 Viewport", () => {
   it("Runs Some Mean Automated Tests for NMV2", () => { 
   cy.visit('');
