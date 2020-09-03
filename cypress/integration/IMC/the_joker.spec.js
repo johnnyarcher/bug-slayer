@@ -4,9 +4,8 @@ describe("The Joker", () => {
   cy.visit(Cypress.env('FIRE'));
   cy.clearCookies()
   cy.clearLocalStorage()
-  cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
-  cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
-    cy.server();
+  cy.get('#user_email').type(Cypress.env('GLOBAL_USER'));
+  cy.get('#user_password').type(Cypress.env('GLOBAL_PASSWORD'));
   cy.get('.btn-primary').click();
   
   //step 2 - confirm home page layout 

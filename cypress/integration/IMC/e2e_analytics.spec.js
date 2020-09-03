@@ -1,10 +1,9 @@
 // <reference types="cypress" />
 describe("Bug-Slayer | Analytics | E2E Smoker", () => {
   it("Runs Automated E2E Smoke Tests for Analytics on IMC", () => { 
-  cy.visit('http://localhost:3000');
-  cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
-  cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
-    cy.server();
+  cy.visit(Cypress.env('FIRE'));
+  cy.get('#user_email').type(Cypress.env('GLOBAL_USER'));
+  cy.get('#user_password').type(Cypress.env('GLOBAL_PASSWORD'));
   cy.get('.btn-primary').click();
 
   cy.get('h1').should('contain', 'Welcome to Smarter Marketing');

@@ -1,12 +1,11 @@
 // <reference types="cypress" />
 describe("Bug-Slayer | Analytics | Classic Reports", () => {
   it("Validates Classic Reports", () => { 
-  cy.visit('http://localhost:3000');
+  cy.visit(Cypress.env('FIRE'));
   cy.clearCookies()
   cy.clearLocalStorage()
-  cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
-  cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
-    cy.server();
+  cy.get('#user_email').type(Cypress.env('GLOBAL_USER'));
+  cy.get('#user_password').type(Cypress.env('GLOBAL_PASSWORD'));
   cy.get('.btn-primary').click();
 
   //do next - add validation each form loaded successfully

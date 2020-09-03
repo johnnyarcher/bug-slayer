@@ -3,9 +3,8 @@ describe("Bug-Slayer | IMC Landing Page | E2E Regression", () => {
   it("Runs Automated E2E Regression for the IMC Landing Page", () => { 
   cy.visit(Cypress.env('FIRE'));
   cy.clearLocalStorage()
-  cy.clearCookies()
-  cy.get('#user_email').type(Cypress.env('G5_AUTH_USERNAME'));
-  cy.get('#user_password').type(Cypress.env('G5_AUTH_PASSWORD'));
+  cy.get('#user_email').type(Cypress.env('GLOBAL_USER'));
+  cy.get('#user_password').type(Cypress.env('GLOBAL_PASSWORD'));
   cy.get('.btn-primary').click();
   
   //step 2 - confirm home page layout 
