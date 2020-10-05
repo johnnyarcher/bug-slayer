@@ -1,6 +1,6 @@
 // <reference types="cypress" />
-describe("NMV2 Viewport", () => {
-  it("Runs Some Mean Automated Tests for NMV2", () => { 
+describe("CMS Viewport Smoke Test", () => {
+  it("Runs Automated Test for Viewport Layout", () => { 
   cy.visit('');
   })
 
@@ -8,7 +8,6 @@ describe("NMV2 Viewport", () => {
 
     // lets see what our app looks like on a super large screen
     cy.viewport(2999, 2999)
-
     cy.viewport('macbook-15')
     cy.wait(200)
     cy.viewport('macbook-13')
@@ -45,7 +44,7 @@ describe("NMV2 Viewport", () => {
 context('Cypress.Screenshot', function () {
     it('cy.screenshot() - take a screenshot', () => {
       // https://on.cypress.io/screenshot
-      cy.screenshot('my-image')
+      cy.screenshot('viewport-testing-image')
     })
 
     it('Cypress.Screenshot.defaults() - change default config of screenshots', function () {
