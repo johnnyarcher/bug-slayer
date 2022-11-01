@@ -23,7 +23,7 @@
   "devDependencies": {
     "axe-core": "^4.0.1",
     "cypress": "^4.12.1",
-    "cypress-audit": "^0.2.2",
+    "cypress-audit": "^1.1.0",
     "cypress-axe": "^0.8.1",
     "eslint-plugin-cypress": "^2.11.1",
     "nodemon": "^2.0.4"
